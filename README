@@ -1,0 +1,5 @@
+<h1>Algoritmo das Oito Rainhas</h1>
+
+O algoritmo das oito rainhas é um problema clássico de colocação de peças em um tabuleiro de xadrez de 8x8 de tal forma que nenhuma rainha possa atacar outra. O objetivo do problema é encontrar todas as possíveis soluções para esse problema.
+
+Existem várias abordagens para resolver o problema das oito rainhas, mas uma das mais comuns é a abordagem de backtracking. A ideia básica é colocar uma rainha em uma coluna e, em seguida, verificar se é possível colocar outra rainha na próxima coluna, respeitando as regras de não permitir que as rainhas se ataquem. Se for possível, a próxima rainha é colocada e o processo continua até que todas as oito rainhas tenham sido colocadas ou até que seja determinado que não há mais soluções possíveis.
