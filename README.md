@@ -1,7 +1,10 @@
-# Autores
+# CEFET-MG unidade Divinópolis
+## Autores
 
- - Leonardo Campos CEFET-MG
- - Pedro Rodrigues CEFET-MG
+ - Leonardo de Oliveira Campos
+ - Pedro Henrique Rodrigues Pereira
+
+</br>
 
 # O problema das 8 rainhas e sua solução com Algoritmo Genético
 
@@ -19,7 +22,7 @@ Nosso algoritmo está dividido em três objetos diferentes, os quais são: chess
 
 Neste algoritmo genético seguimos o seguinte pseudo-código:
 
-![Imagem do WhatsApp de 2023-05-11 à(s) 01 35 47](https://github.com/pedro-rodrigues18/ai-eight-queens-puzzle/assets/78708394/a67b69a2-5d3e-402b-9bb4-801ad42f4356)
+![pseudocode](images/pseudocode.png)
 
 ### 1° Etapa - População
 
@@ -43,7 +46,7 @@ A mutação é feita de forma aleatória, escolhendo um cromossomo para ser muta
 
 ### Resultado 
  
-![out](https://github.com/pedro-rodrigues18/ai-eight-queens-puzzle/assets/53882790/da7932cf-80da-4215-9d09-811dbb0529e4)
+![out](images/out.png)
   
 Essas iterações são feitas até que se chegue em um resultado ótimo.
 
