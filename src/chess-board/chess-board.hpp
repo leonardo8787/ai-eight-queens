@@ -19,7 +19,7 @@ class ChessBoard {
         // Methods
         void fillBoard(vector<int> individual);
         void printBoard();
-        int returnNumberOfConflicts(vector<int>individual);
+        int returnNumberOfConflicts(vector<int> queenPositions);
 };
 
 #endif

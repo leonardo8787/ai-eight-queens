@@ -3,8 +3,8 @@
 ChessBoard::ChessBoard() : board(8, vector<int>(8, 0)) {}
 
 void ChessBoard::fillBoard(vector<int> individual) {
-    for(int i=0; i<8; i++){
-        for(int j=0; j<8; j++){
+    for(unsigned int i=0; i<individual.size(); i++){
+        for(unsigned int j=0; j<individual.size(); j++){
             this->board[i][j] = 0;
         }
     }
@@ -29,8 +29,16 @@ void ChessBoard::printBoard(){
     cout << "\n";
 }
 
-int ChessBoard::returnNumberOfConflicts(vector<int> individual) {
-    // TODO
+int ChessBoard::returnNumberOfConflicts(vector<int> queenPositions) {
+    int numberOfConflicts = 0;
 
-    return 0;
+    for (long unsigned int i = 0; i < queenPositions.size(); i++) {
+        for (long unsigned int j = i + 1; j < queenPositions.size(); j++) {
+            if (queenPositions[i] == queenPositions[j] || abs(queenPositions[i] - queenPositions[j]) == abs(int(i - j))) {
+                numberOfConflicts++;
+            }
+        }
+    }
+    
+    return numberOfConflicts;
 }
