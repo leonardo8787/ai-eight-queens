@@ -58,19 +58,19 @@ Individual GeneticAlgorithm::reproduce(Individual x, Individual y){
     child.queenPositions.clear();
 
     // Split the original vector into two parts
-    cout << "X = ";
+    // cout << "X1 = ";
     for(int i=0; i<4; i++){
-        cout << x.queenPositions[i] << " ";
+        // cout << x.queenPositions[i] << " ";
         child.queenPositions.push_back(x.queenPositions[i]);
     }
-    cout << "\n";
-    cout << "Y = ";
+    // cout << "\n";
+    // cout << "Y2 = ";
     for(int i=4; i<8; i++){
-        cout << y.queenPositions[i] << " ";
+        // cout << y.queenPositions[i] << " ";
         child.queenPositions.push_back(y.queenPositions[i]);
     }
 
-    cout << "\n";
+    //cout << "\n";
 
     // Mutation
     int indexChromosome = this->sort.sorting(8);
@@ -78,12 +78,12 @@ Individual GeneticAlgorithm::reproduce(Individual x, Individual y){
 
     child.queenPositions[indexChromosome] = newChromosome;
 
-    cout << "Filho:\n";
-    cout << "[ ";
-    for(auto& i: child.queenPositions){
-        cout << i << " ";
-    }
-    cout << "]" << endl;
+    // cout << "Filho:\n";
+    // cout << "[ ";
+    // for(auto& i: child.queenPositions){
+    //     cout << i << " ";
+    // }
+    // cout << "]" << endl;
     
     return child;
 }

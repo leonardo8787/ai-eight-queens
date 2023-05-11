@@ -13,7 +13,7 @@ using namespace std;
 int main(){
     auto startTime = chrono::steady_clock::now();
 
-    GeneticAlgorithm ga(8); // GA with 4 individuals
+    GeneticAlgorithm ga(500); // GA with n individuals
     bool find = false;
 
     Individual x;
@@ -21,6 +21,10 @@ int main(){
     Individual child;
 
     ga.generateIndividualsOfPopulation();
+
+    cout << "Tamanho da população: " << ga.population.size() << endl;
+
+    cout << "Procurando solução ótima..." << endl;
 
     while(!find){
         ga.fitnessFunction();
