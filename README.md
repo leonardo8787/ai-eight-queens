@@ -1,7 +1,7 @@
 # Autores
 
  - Leonardo Campos CEFET-MG
- - Pedro Henrique CEFET-MG
+ - Pedro Rodrigues CEFET-MG
 
 # Algoritmos das 8 rainhas
 
@@ -41,7 +41,9 @@ Nesta etapa é realizado o cruzamento dos pais e é gerado um novo indivíduo fi
   
 A mutação é feita de forma aleatória, escolhendo um cromossomo para ser mutado, onde sua mutação tem valor aleatório.
 
-
+### Resultado 
+ 
+![resultado](https://github.com/pedro-rodrigues18/ai-eight-queens-puzzle/assets/78708394/59072799-1858-4b89-add3-c1a24a83c195)
   
 Essas iterações são feitas até que se chegue em um resultado ótimo ou próximo ao ótimo.
 
