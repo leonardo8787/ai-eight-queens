@@ -3,7 +3,7 @@
  - Leonardo Campos CEFET-MG
  - Pedro Rodrigues CEFET-MG
 
-# Algoritmos das 8 rainhas
+# O problema das 8 rainhas e sua solução com Algoritmo Genético
 
 O problema das Oito Rainhas também pode ser resolvido usando algoritmos genéticos. Algoritmos genéticos são uma classe de algoritmos de otimização que se baseiam nos processos de seleção natural e reprodução na evolução biológica. No caso das Oito Rainhas, o algoritmo genético começa com uma população inicial de possíveis soluções, chamadas de indivíduos. Cada indivíduo é uma disposição diferente das rainhas no tabuleiro de xadrez. A população inicial é criada aleatoriamente ou com alguma heurística. 
 
@@ -21,31 +21,31 @@ Neste algoritmo genético seguimos o seguinte pseudo-código:
 
 ![Imagem do WhatsApp de 2023-05-11 à(s) 01 35 47](https://github.com/pedro-rodrigues18/ai-eight-queens-puzzle/assets/78708394/a67b69a2-5d3e-402b-9bb4-801ad42f4356)
 
-### 1° etapa - população
+### 1° Etapa - População
 
 A nossa população é gerada de maneira aleatória com 8 indivíduos, cada indivíduo possui um vector<int> representando a posição onde a rainha se encontra na distribuição do tabuleiro de xadrex. O indivíduo também possui um parâmetro FITNESS, que representa o número de conflitos existentes no tabuleiro de xadrex. 
 
-### 2° etapa - fitness function
+### 2° Etapa - Fitness function
   
 Esta função é usada para retornar o número de conflitos presentes no tabuleiro para cada indivíduo. 
 
-### 3° etapa - Seleção
+### 3° Etapa - Seleção
   
 Nesta etapa foi implementado uma distribuição de probabilidades com resultado dos valores fitness de cada endivíduo. Faz-se necessário para selecionar os melhores indivíduos para o cruzamento(crossover). Por padrão é priorizado indivíduos com menor número de conflitos. A função de seleção retornará o índice dos indivíduos que serão os pais.
   
-### 4° etapa - Reprodução(Crossover)
+### 4° Etapa - Reprodução (Crossover)
   
 Nesta etapa é realizado o cruzamento dos pais e é gerado um novo indivíduo filho. O cruzamento se dá selecionando a primeira metade do primeiro pai com a segunda metade do segundo pai. 
   
-### 5° etapa - Mutação 
+### 5° Etapa - Mutação 
   
 A mutação é feita de forma aleatória, escolhendo um cromossomo para ser mutado, onde sua mutação tem valor aleatório.
 
 ### Resultado 
  
-![resultado](https://github.com/pedro-rodrigues18/ai-eight-queens-puzzle/assets/78708394/59072799-1858-4b89-add3-c1a24a83c195)
+![out](https://github.com/pedro-rodrigues18/ai-eight-queens-puzzle/assets/53882790/da7932cf-80da-4215-9d09-811dbb0529e4)
   
-Essas iterações são feitas até que se chegue em um resultado ótimo ou próximo ao ótimo.
+Essas iterações são feitas até que se chegue em um resultado ótimo.
 
 # Referências 
   
